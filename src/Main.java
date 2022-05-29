@@ -3,10 +3,9 @@ public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println("Olá mundo!");
-		System.out.println("");
+		System.out.print("Olá Mundo, ");
 		
-		System.out.println("Hello Word!");
+		System.out.println("Bom dia!");
 		
 
 	}

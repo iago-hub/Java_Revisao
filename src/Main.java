@@ -1,76 +1,92 @@
+import java.util.Locale;
+import java.util.Scanner;
 
 public class Main {
 
 	public static void main(String[] args) {
+
+		// Entrada de Dados
+
+		System.out.println("-------------------Exemplo 1--------------------");
+		//Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		String x;
+
+		System.out.print("Digite uma palavra: ");
+
+		x = sc.next();
+
+		System.out.println("Você digitou: " + x);
+
+		System.out.println("--------------------Exemplo 2-------------------");
+
+		int a;
+
+		System.out.print("Digite um número inteiro: ");
+
+		a = sc.nextInt();
+
+		System.out.println("Você digitou: " + a);
+
+		// System.out.println("teste " + (b = sc.next()));
+
+		System.out.println("---------------------Exemplo 3-------------------");
+
+		Double b;
 		
-	//   Processamento de Dados
+		System.out.print("Digite um número fracionado: ");
 		
-	System.out.println("-------------------Exemplo 1--------------------");
-		int x, y;
+		b = sc.nextDouble();
 		
-		x = 5;
+		System.out.printf("Você digitou: %.2f%n", b); 
+				
 		
-		y= 2 * x;
-		
-		System.out.println(x);
-		System.out.println(y);
-		
-		System.out.println("--------------------Exemplo 2--------------------");
-		
-		int w;
-		
-		double z;
-		
-		w = 5;
-		z = 2 * w;
-		
-		System.out.println(w);
-		System.out.println(z);
-		
-		System.out.println("---------------------Exemplo 3----------------");
-		
-		double b, B, h, area;
-		
-		b=6.0;
-		B=8.0;
-		h=5.0;
-		
-		area = (b+B)/ 2.0 * h;
-		
-		System.out.println(area);
+		System.out.println("----------------------Exemplo 4------------------");
 		
 		
-		System.out.println("-------------------Exemplo 4------------------");
+		System.out.println("Você digitou: "+b);
 		
-		int c, d;
-		double resultado;
+		System.out.println("----------------------Exemplo 5-------------------");
 		
-		c = 5;
-		d = 2;
+		Locale.setDefault(Locale.US);
 		
-		resultado = c / d;
+		Double c;
 		
-		System.out.println(resultado);
+		System.out.print("Digite um número fracionado: ");
 		
-		//Avisar o compilador que quero receber o resultado da divisão um double
-		System.out.println("-- Casting = fundição --"); 
+		c = sc.nextDouble();
 		
-		resultado = (double) c / d;
+		System.out.printf("Você digitou: %.2f\n", c);
 		
-		System.out.println(resultado);
+		System.out.println("----------------------Exemplo 6-------------------");
 		
-		System.out.println("------------------Exemplo 5 (Casting)-------------------");
+		char d;
 		
-		double e;
-		int f;
+		System.out.print("Digite um caracter: ");
 		
-		e = 5.0;
-		f = (int) e;
+		d = sc.next().charAt(0);
 		
-		System.out.println(f);
+		System.out.println("Você digitou: " + d);
 		
-	
 		
+		
+		System.out.println("-----------------------Exemplo 7------------------");
+		
+		System.out.println("Digite um texto, inteiro, fracional e caracter: ");
+		
+		x = sc.next();
+		a = sc.nextInt();
+		b = sc.nextDouble();
+		d = sc.next().charAt(0);
+		
+		System.out.println("Dados digitados: ");
+		
+		System.out.println("Você digitou: " + x);
+		System.out.println("Você digitou: " + a);
+		System.out.printf("Você digitou: %.2f%n", b);
+		System.out.println("Você digitou: " + d);
+		
+		sc.close();
 	}
 
 }

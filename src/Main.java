@@ -1,4 +1,3 @@
-import java.util.Locale;
 import java.util.Scanner;
 
 public class Main {
@@ -8,84 +7,48 @@ public class Main {
 		// Entrada de Dados
 
 		System.out.println("-------------------Exemplo 1--------------------");
-		//Locale.setDefault(Locale.US);
+		
+		// Para Ler um texto até a QUEBRA DE LINHA
+
 		Scanner sc = new Scanner(System.in);
-		String x;
 
-		System.out.print("Digite uma palavra: ");
+		String s1, s2, s3;
 
-		x = sc.next();
+		System.out.println("Digite 3 textos: ");
 
-		System.out.println("Você digitou: " + x);
+		s1 = sc.nextLine();
+		s2 = sc.nextLine();
+		s3 = sc.nextLine();
 
-		System.out.println("--------------------Exemplo 2-------------------");
+		System.out.println("Textos digitados: ");
+		System.out.println("Texto 1: " + s1);
+		System.out.println("Texto 2: " + s2);
+		System.out.println("Texto 3: " + s3);
 
-		int a;
+		
 
-		System.out.print("Digite um número inteiro: ");
-
-		a = sc.nextInt();
-
-		System.out.println("Você digitou: " + a);
-
-		// System.out.println("teste " + (b = sc.next()));
-
-		System.out.println("---------------------Exemplo 3-------------------");
-
-		Double b;
+		System.out.println("-----------------Exemplo 2----------------------");
 		
-		System.out.print("Digite um número fracionado: ");
+		// Atenção Exemplo de quebra de linha pendente
 		
-		b = sc.nextDouble();
+		int x;
+		String x1, x2, x3;
 		
-		System.out.printf("Você digitou: %.2f%n", b); 
-				
+		System.out.println("Digite um valor inteiro e três textos : ");
 		
-		System.out.println("----------------------Exemplo 4------------------");
-		
-		
-		System.out.println("Você digitou: "+b);
-		
-		System.out.println("----------------------Exemplo 5-------------------");
-		
-		Locale.setDefault(Locale.US);
-		
-		Double c;
-		
-		System.out.print("Digite um número fracionado: ");
-		
-		c = sc.nextDouble();
-		
-		System.out.printf("Você digitou: %.2f\n", c);
-		
-		System.out.println("----------------------Exemplo 6-------------------");
-		
-		char d;
-		
-		System.out.print("Digite um caracter: ");
-		
-		d = sc.next().charAt(0);
-		
-		System.out.println("Você digitou: " + d);
-		
-		
-		
-		System.out.println("-----------------------Exemplo 7------------------");
-		
-		System.out.println("Digite um texto, inteiro, fracional e caracter: ");
-		
-		x = sc.next();
-		a = sc.nextInt();
-		b = sc.nextDouble();
-		d = sc.next().charAt(0);
+		x = sc.nextInt();
+		sc.nextLine();
+		x1 = sc.nextLine();
+		x2 = sc.nextLine();
+		x3 = sc.nextLine();
 		
 		System.out.println("Dados digitados: ");
 		
-		System.out.println("Você digitou: " + x);
-		System.out.println("Você digitou: " + a);
-		System.out.printf("Você digitou: %.2f%n", b);
-		System.out.println("Você digitou: " + d);
-		
+		System.out.println("Valor inteiro: " + x );
+		System.out.println("Texto 1: " + x1);
+		System.out.println("Texto 2: " + x2);
+		System.out.println("Texto 3: " + x3);
+				
 		sc.close();
 	}
 
